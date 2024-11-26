@@ -1,0 +1,198 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Basic style for the entire webpage */
+
+header {
+    background-color: green; /* Change to your preferred green shade */
+    color: white; /* Keep text white for good contrast */
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Header styling */
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+    background-color: #333;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+/* Navigation bar styling */
+
+.product-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 20px;
+}
+
+/* Cart Button Styles */
+#cart-button {
+    position: fixed; /* Fix it in the top-right corner */
+    top: 10px; /* Distance from the top */
+    right: 10px; /* Distance from the right */
+    background-color: #006400; /* Dark green background */
+    color: white; /* White text/icon color */
+    padding: 10px;
+    border-radius: 50%; /* Make it circular */
+    width: 50px; /* Adjust size */
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    z-index: 1000; /* Ensure it appears above other elements */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
+}
+
+#cart-button:hover {
+    background-color: #004d00; /* Darker green on hover */
+}
+
+#cart-button i {
+    font-size: 20px; /* Adjust icon size */
+}
+
+#cart-count {
+    position: absolute; /* Position the count indicator */
+    top: 5px; /* Adjust position */
+    right: 5px;
+    background-color: red; /* Red background for count */
+    color: white; /* White text */
+    font-size: 12px; /* Small font size */
+    width: 18px; /* Small circle */
+    height: 18px;
+    border-radius: 50%; /* Make it circular */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold; /* Bold font */
+}
+
+/* Sets up the .product-list container */
+
+.product {
+    background-color: white;
+    margin: 10px;
+    padding: 15px;
+    width: 250px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+/* Styles each .product card */
+
+.product img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+/* Styles images inside .product */
+
+.product button {
+    background-color: #a8d5a8; /* Light green color */
+    border: none;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.product button:hover {
+    background-color: #6fa96f; /* Slightly darker green for hover effect */
+}
+/* Styles buttons in the .product cards */
+
+/* Featured Products Section */
+.featured-products {
+    display: flex;
+    justify-content: space-between; /* Distribute items evenly with space in between */
+    gap: 20px; /* Optional: Add space between items */
+    margin: 20px;
+}
+.featured-products h2 {
+    font-style: italic;
+}
+
+.testimonials h2, 
+.testimonials p {
+    font-style: italic;
+}
+
+footer a {
+    color: #006400; /* Dark Green color */
+    text-decoration: none; /* Optional: Remove underline */
+}
+
+footer a:hover {
+    color: #004d00; /* Slightly darker green on hover */
+}
+
+/* Media Queries for Responsive Design */
+
+/* For tablets (768px and up) */
+@media (min-width: 768px) {
+    .product-list {
+        flex-direction: row;
+    }
+}
+
+/* For mobile screens (up to 767px) */
+@media (max-width: 767px) {
+    body {
+        font-size: 14px;
+    }
+    
+    header, footer {
+        padding: 5px; /* Consistent padding for mobile */
+    }
+
+    .product {
+        width: 100%; /* Full width */
+        margin: 5px; /* Small margin */
+    }
+
+    .product img {
+        width: 80%; /* Smaller images for mobile */
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: column; /* Stack nav links vertically */
+        align-items: center;
+    }
+}
+
+/* Adjust the body font size on desktops (1024px and up) */
+@media (min-width: 1024px) {
+    body {
+        font-size: 18px;
+    }
+}
+
+footer {
+    text-align: center;
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+/* Footer styling */
